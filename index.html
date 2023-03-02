@@ -1,0 +1,220 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Person Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/79ac548860.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+       <div class="container">
+           <nav>
+               <div class="logo" ><img srс="image/logo1.png"/></div>
+               <ul id="sidemenu">
+                   <li><a href='#'>Home</a></li>
+                   <li><a href='#'>About</a></li>
+                   <li><a href='#'>Services</a></li>
+                   <li><a href='#'>Portfolio</a></li>
+                   <li><a href='#'>Contact</a></li>
+                   <li class="fas fa-times" onclick="closemenu()"></li>
+               </ul>
+               <i class="fas fa-bars" onclick="openmenu()"></i>
+           </nav>
+           <div class="header-text">
+               <p>Портфолио</p>
+               <h1>Привет,меня зовут <span>Лиза</span><br>Я живу и учусь<br> в Воронеже</h1>
+           </div>
+       </div>
+    </div>
+<!----------about--->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="image/user2.png" >
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">Обо мне </h1>
+                    <p>
+                        Я верю, что в любой ситуации возможен и желателен оригинальный подход. 
+                        Препятствия для меня это возможности. Возможности стать лучше, умнее, сильнее, смелее.
+                        Я люблю ставить перед собой нетривиальные задачи, которые позволяют использовать воображение
+                        и одновременно улучшать мои навыки. Я внимательно и кропотливо отношусь к своим задачам,
+                        при этом всегда открыта к комментариям со стороны.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Навыки</p>
+                        <p class="tab-links" onclick="opentab('experience')">Личные достижения</p>
+                        <p class="tab-links" onclick="opentab('education')">Образование</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li>
+                                <span>C++</span>
+                                <div class="container1">
+                                    <div class="skill c"></div>
+                                </div>
+                            </li>
+                            <li>
+                                <span>C#</span>
+                                <div class="container1">
+                                    <div class="skill c1"></div>
+                                </div>
+                            </li>
+                            <li>
+                                <span>Photoshop</span>
+                                <div class="container1">
+                                    <div class="skill c2"></div>
+                                </div>
+                            </li>
+                            <li>
+                                <span>MySQL</span>
+                                <div class="container1">
+                                    <div class="skill c3"></div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2021</span><br>Победитель олимпиады первокурсников вузов Воронежа <br>
+                            по информатике и програмированию,проводимой ВГУ и Digital Soft</li>
+                            <li><span>2018</span><br>Победитель Брянской открытой областной<br>олимпиады по живописи</li>
+                            <li><span>2020</span><br>Участник Всероссийской олимпиады <br>по английскому языку</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2010-2021</span><br>Средняя школа им. С. М. Кирова</li>
+                            <li><span>2010-2020</span><br>Карачевская школа искусств имени В.Ф. Кольцова</li>
+                            <li><span>2021-2025</span><br>Воронежский государственный университет</li>
+                            <li><span>2021</span><br>Surf  Летняя школа PM</li>
+                            <li><span>2022</span><br>DSR .NET School</li>
+                            <li><span>2022</span><br>DSR QA School:Embedded</li>
+                            <li><span>2022</span><br>Epam SQL by Examples/Relational Databases Basic</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-------------services------->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">Moи знания</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Програмирование</h2>
+                    <p>
+                        Алгоритмы и структуры данных. Объектно ориентированное програмирование.
+                        Базы данных.
+                    </p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-paintbrush"></i>
+                    <h2>Art</h2>
+                    <p>
+                        Композиция. Графика. CG Painting.
+                        Дизайн. Акварель. Масляная живопись. Пастельная живопись. 
+                    </p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-square-root-variable"></i>
+                    <h2>Математика</h2>
+                    <p>
+                        Теория вероятности и Матстатистика. Математический анализ.
+                        Дискретная математика. Диференциальные уравнения.
+                        Алгебра. Аналитическая геометрия. Комплексный анализ. Функцианальный анализ
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!----portfolio-->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My work</h1>
+            <div class=" work-list">
+                <div class="work">
+                    <img srс="image/work.png" />
+                    <div class="layer">
+                        <h3>Sodoipou tuyyhfhg</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        </p>
+                    </div>
+                </div>
+                <div class="work">
+                    <img srс="image/work.png" />
+                    <div class="layer">
+                        <h3>Sodoipou tuyyhfhg</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        </p>
+                    </div>
+                    </div>
+                    <div class="work">
+                        <img srс="/image/work.png" />
+                        <div class="layer">
+                            <h3>Sodoipou tuyyhfhg</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            </p>
+                        </div>
+                        </div>
+             </div>
+        </div>
+    </div>
+<!-----contact--->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Свяжитесь со мной</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>realplumpa@gmail.com</p>
+                    <p><i class="fa-solid fa-phone-square-alt"></i>89158008964</p>
+                    <div class="social-icons">
+                        <a href="https://vk.com/penochk_a"><i class="fa-brands fa-vk"></i></a>
+                        <a href="https://t.me/penka_penochka"> <i class ="fa-brands fa-telegram"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Ваше имя" required>
+                        <input type="email" name="email" placeholder="Ваш Email" required>
+                        <textarea name="Message" rows="6" placeholder="Ведите сообщение" ></textarea>
+                        <button type="submit" class="btn" >Отправить</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="copyright">
+                <p>Copyright@ Liza. Made with<i class="fas fa-heart"></i></p>
+            </div>
+        </div>
+    </div>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <script>
+    </script>
+</body>
+</html>
