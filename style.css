@@ -4,6 +4,9 @@
     font-family: "Poppins",sans-serif;
     box-sizing: border-box;
 }
+html{
+    scroll-behavior:smooth;
+}
 
 body {
     background-color: rgb(167, 205, 236);
@@ -66,7 +69,7 @@ nav ul li {
             color: #041b24;
         }
             .header-text h1 span {
-                color: #4065c4;
+                color: #144cd8;
             }
 /*-------about-----*/
 #about {
@@ -218,7 +221,6 @@ nav ul li {
 }
 .work img{
     width:100%;
-    height:300px;
     border-radius:10px;
     display:block;
     transition: transform 0.5s;
@@ -265,6 +267,7 @@ nav ul li {
     flex-basis: 60%;
 }
 .contact-left p{
+    color:#041b24;
     margin-top:30px;
 }
 .contact-left p i{
@@ -307,10 +310,10 @@ form input,form textarea{
         width:100%;
         border:0;
         outline:none;
-        background:#81bacf;
+        background:rgb(129, 177, 216);
         padding:15px;
         margin:15px 0;
-        color:#fff;
+        color:#4065c4;
         font-size:18px;
         border-radius:6px;
     }
@@ -324,28 +327,33 @@ form .btn{
     width:100%;
     text-align:center;
     padding:25px 0;
-    background:#81bacf;
+    background:rgb(129, 177, 216);
     margin-top:20px;
+}
+.copyright p{
+    color:#041b24;
 }
 .copyright i{
     color:#144cd8;
 }
 /*----for small---*/
-nav.fas{
+nav .fas{
     display:none;
 }
 @media only screen and (max-width:600px){
     #header{
-        /*background-image:url();*/
+        background-image:url("image/background2.png");
+        
     }
     .header-text{
         margin-top:100%;
         font-size:16px;
     }
     .header-text h1{
+        color:#041b24;
         font-size:30px;
     }
-    nav.fas {
+    nav .fas {
         display: block;
         font-size:25px;
     }
@@ -357,7 +365,7 @@ nav.fas{
         width:200px;
         height:100vh;
         padding-top:50px;
-
+        transition: right 0.5s;
         z-index:2;
     }
     nav ul li{
@@ -369,5 +377,27 @@ nav.fas{
         top:25px;
         left:25px;
         cursor:pointer;
+    }
+    .sub-title{
+        font-size:40px;
+    }
+    .about-col-1,.about-col-2{
+        flex-basis:100%;
+    }
+    .about-col-1{
+        margin-bottom:30px;
+    }
+    .about-col-2{
+        font-size:14px;
+    }
+    .tab-links{
+        font-size:16px;
+        margin-right:20px;
+    }
+    .contact-left,.contact-right{
+        flex-basis:100%;
+    }
+    .copyright{
+        font-size:15px;
     }
 }
